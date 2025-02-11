@@ -1,0 +1,484 @@
+Script started on 2025-02-12 00:39:11+05:30 [TERM="xterm" TTY="/dev/pts/0" COLUMNS="120" LINES="32"]
+# apt-get -y install curl
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 6%
+
+Reading package lists... 6%
+
+Reading package lists... 65%
+
+Reading package lists... 73%
+
+Reading package lists... 73%
+
+Reading package lists... 73%
+
+Reading package lists... 73%
+
+Reading package lists... 75%
+
+Reading package lists... 75%
+
+Reading package lists... 79%
+
+Reading package lists... 79%
+
+Reading package lists... 84%
+
+Reading package lists... 84%
+
+Reading package lists... 88%
+
+Reading package lists... 88%
+
+Reading package lists... 88%
+
+Reading package lists... 88%
+
+Reading package lists... 88%
+
+Reading package lists... 88%
+
+Reading package lists... 91%
+
+Reading package lists... 91%
+
+Reading package lists... 96%
+
+Reading package lists... 96%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... Done
+
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+
+Building dependency tree... Done
+
+
+Reading state information... 0% 
+
+Reading state information... 2%
+
+Reading state information... Done
+
+curl is already the newest version (8.5.0-2ubuntu10.6).
+0 upgraded, 0 newly installed, 0 to remove and 15 not upgraded.
+# curl -sL https://deb.nodesource.com/setup_20.x | bash
+[38;5;79m2025-02-12 00:39:36 - Installing pre-requisites[0m
+
+0% [Working]
+            
+Hit:1 https://deb.nodesource.com/node_20.x nodistro InRelease
+
+0% [Working]
+0% [Connecting to archive.ubuntu.com (185.125.190.83)] [Connecting to security.ubuntu.com (91.189.91.81)]
+                                                                                                         
+Get:2 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+
+                                                                                                         
+0% [Waiting for headers] [2 InRelease 7372 B/126 kB 6%]
+                                                       
+Hit:3 http://archive.ubuntu.com/ubuntu noble InRelease
+
+                                                       
+0% [2 InRelease 12.5 kB/126 kB 10%]
+0% [Waiting for headers] [2 InRelease 12.5 kB/126 kB 10%]
+0% [Waiting for headers] [2 InRelease 70.1 kB/126 kB 56%]
+                                                         
+Get:4 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+
+0% [4 InRelease 5484 B/126 kB 4%] [2 InRelease 102 kB/126 kB 81%]
+                                                                 
+0% [4 InRelease 35.5 kB/126 kB 28%]
+0% [4 InRelease 35.5 kB/126 kB 28%]
+                                   
+0% [Working]
+0% [Waiting for headers]
+                        
+Get:5 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+
+0% [5 InRelease 4812 B/126 kB 4%]
+                                 
+0% [Working]
+100% [Working]
+              
+Fetched 378 kB in 3s (128 kB/s)
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 6%
+
+Reading package lists... 6%
+
+Reading package lists... 66%
+
+Reading package lists... 73%
+
+Reading package lists... 73%
+
+Reading package lists... 73%
+
+Reading package lists... 73%
+
+Reading package lists... 75%
+
+Reading package lists... 75%
+
+Reading package lists... 79%
+
+Reading package lists... 79%
+
+Reading package lists... 84%
+
+Reading package lists... 84%
+
+Reading package lists... 88%
+
+Reading package lists... 88%
+
+Reading package lists... 88%
+
+Reading package lists... 88%
+
+Reading package lists... 88%
+
+Reading package lists... 88%
+
+Reading package lists... 91%
+
+Reading package lists... 91%
+
+Reading package lists... 96%
+
+Reading package lists... 96%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... Done
+
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 6%
+
+Reading package lists... 6%
+
+Reading package lists... 68%
+
+Reading package lists... 73%
+
+Reading package lists... 73%
+
+Reading package lists... 73%
+
+Reading package lists... 73%
+
+Reading package lists... 75%
+
+Reading package lists... 75%
+
+Reading package lists... 79%
+
+Reading package lists... 79%
+
+Reading package lists... 84%
+
+Reading package lists... 84%
+
+Reading package lists... 88%
+
+Reading package lists... 88%
+
+Reading package lists... 88%
+
+Reading package lists... 88%
+
+Reading package lists... 88%
+
+Reading package lists... 88%
+
+Reading package lists... 91%
+
+Reading package lists... 91%
+
+Reading package lists... 96%
+
+Reading package lists... 96%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... Done
+
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+
+Building dependency tree... Done
+
+
+Reading state information... 0% 
+
+Reading state information... 2%
+
+Reading state information... Done
+
+apt-transport-https is already the newest version (2.7.14build2).
+ca-certificates is already the newest version (20240203).
+curl is already the newest version (8.5.0-2ubuntu10.6).
+gnupg is already the newest version (2.4.4-2ubuntu17).
+0 upgraded, 0 newly installed, 0 to remove and 15 not upgraded.
+
+0% [Working]
+            
+Hit:1 https://deb.nodesource.com/node_20.x nodistro InRelease
+
+0% [Connecting to archive.ubuntu.com (91.189.91.81)] [Connecting to security.ubuntu.com (91.189.91.81)]
+                                                                                                       
+0% [Waiting for headers] [Connecting to security.ubuntu.com (91.189.91.81)]
+                                                                           
+Hit:2 http://archive.ubuntu.com/ubuntu noble InRelease
+
+                                                                           
+0% [Waiting for headers]
+0% [Waiting for headers] [Waiting for headers]
+                                              
+Hit:3 http://security.ubuntu.com/ubuntu noble-security InRelease
+
+                                              
+0% [Waiting for headers]
+0% [Waiting for headers]
+                        
+Hit:4 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+
+                        
+0% [Working]
+0% [Waiting for headers]
+                        
+Hit:5 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+
+                        
+0% [Working]
+20% [Working]
+             
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 6%
+
+Reading package lists... 6%
+
+Reading package lists... 64%
+
+Reading package lists... 73%
+
+Reading package lists... 73%
+
+Reading package lists... 73%
+
+Reading package lists... 73%
+
+Reading package lists... 75%
+
+Reading package lists... 75%
+
+Reading package lists... 79%
+
+Reading package lists... 79%
+
+Reading package lists... 84%
+
+Reading package lists... 84%
+
+Reading package lists... 88%
+
+Reading package lists... 88%
+
+Reading package lists... 88%
+
+Reading package lists... 88%
+
+Reading package lists... 88%
+
+Reading package lists... 88%
+
+Reading package lists... 91%
+
+Reading package lists... 91%
+
+Reading package lists... 96%
+
+Reading package lists... 96%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... Done
+
+[1;34m2025-02-12 00:39:45 - Repository configured successfully.[0m
+[38;5;79m2025-02-12 00:39:45 - To install Node.js, run: apt-get install nodejs -y[0m
+[38;5;79m2025-02-12 00:39:45 - You can use N|solid Runtime as a node.js alternative[0m
+[1;32m2025-02-12 00:39:45 - To install N|solid Runtime, run: apt-get install nsolid -y 
+[0m
+# apt install -y nodejs
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 6%
+
+Reading package lists... 6%
+
+Reading package lists... 67%
+
+Reading package lists... 73%
+
+Reading package lists... 73%
+
+Reading package lists... 73%
+
+Reading package lists... 73%
+
+Reading package lists... 75%
+
+Reading package lists... 75%
+
+Reading package lists... 79%
+
+Reading package lists... 79%
+
+Reading package lists... 84%
+
+Reading package lists... 84%
+
+Reading package lists... 88%
+
+Reading package lists... 88%
+
+Reading package lists... 88%
+
+Reading package lists... 88%
+
+Reading package lists... 88%
+
+Reading package lists... 88%
+
+Reading package lists... 91%
+
+Reading package lists... 91%
+
+Reading package lists... 96%
+
+Reading package lists... 96%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... Done
+
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+
+Building dependency tree... Done
+
+
+Reading state information... 0% 
+
+Reading state information... 2%
+
+Reading state information... Done
+
+nodejs is already the newest version (20.18.3-1nodesource1).
+0 upgraded, 0 newly installed, 0 to remove and 15 not upgraded.
+# node /usr. /src/app/index.js
+Hello World
+# exit
+
+Script done on 2025-02-12 00:40:19+05:30 [COMMAND_EXIT_CODE="0"]
