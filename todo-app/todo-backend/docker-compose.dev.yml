@@ -18,5 +18,20 @@ services:
     volumes:
       - ./redis_data:/data
 
+  server:
+    image: todo-backend-dev
+    build:
+      context: .
+      dockerfile: dev.Dockerfile
+    depends_on:
+      - mongo
+      - redis
+    volumes:
+      - ./:/usr/src/app
+    ports:
+      - 3000:3000
+    container_name: todo-backend-dev
+    env_file:
+      - .env
 volumes:
   mongo_data:
