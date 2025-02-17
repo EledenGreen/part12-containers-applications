@@ -9,4 +9,11 @@ export default defineConfig({
     globals: true,
     setupFiles: './testSetup.js',
   },
+  server: {
+    port: 5173,
+    host: true,
+    watch: {
+      usePolling: true,
+    },
+  },
 })
