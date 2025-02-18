@@ -9,7 +9,6 @@
     "dev": "NODE_ENV=development node --watch index.js",
     "lint": "eslint .",
     "start:test": "NODE_ENV=test node index.js",
-    "build:ui": "rm -rf dist && cd ./bloglist-frontend && npm install && npm run build && cp -r dist ../",
     "start:prod": "NODE_ENV=production node --watch index.js"
   },
   "author": "",
