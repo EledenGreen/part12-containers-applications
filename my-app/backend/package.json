@@ -1,0 +1,40 @@
+{
+  "name": "bloglist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test node --test",
+    "test:client": "cd ./bloglist-frontend && npm run test",
+    "dev": "NODE_ENV=development node --watch index.js",
+    "lint": "eslint .",
+    "start:test": "NODE_ENV=test node index.js",
+    "build:ui": "rm -rf dist && cd ./bloglist-frontend && npm install && npm run build && cp -r dist ../",
+    "start:prod": "NODE_ENV=production node --watch index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-async-errors": "^3.1.1",
+    "jsonwebtoken": "^9.0.2",
+    "lodash": "^4.17.21",
+    "mongoose": "^8.3.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.20.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "eslint-plugin-vitest-globals": "^1.5.0",
+    "globals": "^15.14.0",
+    "supertest": "^6.3.4",
+    "wait-on": "^8.0.2"
+  }
+}

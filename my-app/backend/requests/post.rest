@@ -1,0 +1,10 @@
+POST http://localhost:3003/api/blogs
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkxPTCB6ZWQiLCJpZCI6IjY2MmIzOWMyNjk5MWU4ZjU2ZWNhMzA4YSIsImlhdCI6MTcxNDE5ODEwNywiZXhwIjoxNzE0MjAxNzA3fQ.G9JHFD-n_ovUdknHxnIMQqrMy6Gd-Prb8Kk_De60WRs
+Content-Type: application/json
+
+{
+      "title": "blog 4 using token via userExtractor middleware",
+      "author": "zed",
+      "url": "https://reactpatterns.com/",
+      "likes": 7
+}
