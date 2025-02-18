@@ -17,7 +17,7 @@ services:
     volumes:
       - ./todo-frontend:/usr/src/app
     ports:
-      - 5173:5173
+      - 5173:80
     container_name: todo-frontend
 
   mongo:
