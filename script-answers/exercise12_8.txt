@@ -1,0 +1,70 @@
+Script started on 2025-02-19 01:18:12+05:30 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="161" LINES="18"]
+[?2004h]0;root@EledenGreen: /mnt/d/Study Portal/Learning World/Full Stack Open Submission - Part-12/part12-containers-applications/todo-app/todo-backendroot@EledenGreen:/mnt/d/Study Portal/Learning World/Full Stack Open Submission - Part-12/part12-containers-applications/todo-app/todo-backend# cleardocker compose -f docker-compose.yml down --volumesup[K --build[A]0;root@EledenGreen: /mnt/d/Study Portal/Learning World/Full Stack Open Submission - Part-12/part12-containers-applications/todo-app/todo-backendroot@EledenGreen:/mnt/d/Study Portal/Learning World/Full Stack Open Submission - Part-12/part12-containers-applications/todo-app/todo-backend# [C[C[C[C[C[C[Cimage rm blo[15Pglist-backend[A]0;root@EledenGreen: /mnt/d/Study Portal/Learning World/Full Stack Open Submission - Part-12/part12-containers-applications/todo-app/todo-backendroot@EledenGreen:/mnt/d/Study Portal/Learning World/Full Stack Open Submission - Part-12/part12-containers-applications/todo-app/todo-backend# [C[C[C[C[C[C[Ccompose -f docker-compose.yml up --build[Kdown --volumes[A]0;root@EledenGreen: /mnt/d/Study Portal/Learning World/Full Stack Open Submission - Part-12/part12-containers-applications/todo-app/todo-backendroot@EledenGreen:/mnt/d/Study Portal/Learning World/Full Stack Open Submission - Part-12/part12-containers-applications/todo-app/todo-backend# clear[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kdocker exec -it to do-backend-mongo-1 mongosh -u root -p example
+[?2004l]0;mongosh mongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000Current Mongosh Log ID:	67b4e42d182c369318544ca6
+Connecting to:		[1m[32mmongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.3.8[0m
+Using MongoDB:		8.0.4
+[1m[33mUsing Mongosh[0m:		2.3.8
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+[1G[0J [1G[1m[33m------[0m
+   [1m[33mThe server generated these startup warnings when booting[0m
+   2025-02-18T19:46:12.349+00:00: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem
+   2025-02-18T19:46:13.917+00:00: For customers running the current memory allocator, we suggest changing the contents of the following sysfsFile
+   2025-02-18T19:46:13.918+00:00: We suggest setting the contents of sysfsFile to 0.
+   2025-02-18T19:46:13.918+00:00: Your system has glibc support for rseq built in, which is not yet supported by tcmalloc-google and has critical performance implications. Please set the environment variable GLIBC_TUNABLES=glibc.pthread.rseq=0
+   2025-02-18T19:46:13.918+00:00: vm.max_map_count is too low
+   2025-02-18T19:46:13.918+00:00: We suggest setting swappiness to 0 or 1, as swapping can cause performance problems.
+[1m[33m------[0m
+
+[1G[0Jtest> [7Gshow dbs
+[1madmin[0m         100.00 KiB
+[1mconfig[0m         12.00 KiB
+[1mlocal[0m          72.00 KiB
+[1mthe_database[0m   40.00 KiB
+[1G[0Jtest> [7Guse the_datab[1G[0Jtest> use the_data[19Ga[1G[0Jtest> use the_data[19Gbase
+switched to db the_database
+[1G[0Jthe_database> [15Gshow collections
+[1mtodos[0m
+[1G[0Jthe_database> [15Gdb.todos.find({})
+[
+  {
+    _id: ObjectId([32m'67b4e383fd3b395dbe544ca7'[39m),
+    text: [32m'Write code'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId([32m'67b4e383fd3b395dbe544ca8'[39m),
+    text: [32m'Learn about containers'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jthe_database> [15Gdb.todos.insertOne()[1G[0Jthe_database> db.todos.insertOne([34G{ text[33mtext[39m: [32m"[39m[32mI[39m[32mn[39m[32mc[39m[32mr[39m[32me[39m[32ma[39m[32ms[39m[32me[39m [32mt[39m[32mh[39m[32me[39m [32mn[39m[32mu[39m[32mm[39m[32mb[39m[32me[39m[32mr[39m [32mo[39m[32mf[39m [32mt[39m[32mo[39m[32mo[39m[32ml[39m[32ms[39m  [1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m"Increase the number of tools [39m[72G[32mi[39m[32mn[39m [32mm[39m[32my[39m [32mt[39m[32mo[39m[32mo[39m[32ml[39m [32mb[39m[32me[39m[32ml[39m[32mt[39m[32m"[39m, d[36mdo[39mdone: fald[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: fal[99Gs[33mfalse[39m } [1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m }[103G)
+{
+  acknowledged: [33mtrue[39m,
+  insertedId: ObjectId([32m'67b4e4da182c369318544ca7'[39m)
+}
+[1G[0Jthe_database> [15G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m })[104G[1G[0Jthe_database> db.todos.find({})[32G
+[
+  {
+    _id: ObjectId([32m'67b4e383fd3b395dbe544ca7'[39m),
+    text: [32m'Write code'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId([32m'67b4e383fd3b395dbe544ca8'[39m),
+    text: [32m'Learn about containers'[39m,
+    done: [33mfalse[39m
+  },
+  {
+    _id: ObjectId([32m'67b4e4da182c369318544ca7'[39m),
+    text: [32m'Increase the number of tools in my tool belt'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jthe_database> [15Gexit
+[?2004h]0;root@EledenGreen: /mnt/d/Study Portal/Learning World/Full Stack Open Submission - Part-12/part12-containers-applications/todo-app/todo-backendroot@EledenGreen:/mnt/d/Study Portal/Learning World/Full Stack Open Submission - Part-12/part12-containers-applications/todo-app/todo-backend# exit
+[?2004lexit
+
+Script done on 2025-02-19 01:22:16+05:30 [COMMAND_EXIT_CODE="0"]
